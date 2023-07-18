@@ -13,3 +13,14 @@ To adding an user as limited user run below command:
 ```
 adduser example_user --shell=/bin/false --no-create-home
 ```
+
+For better experience (30 seconds ssh inactivity check instead of long time check) add below lines to the `/etc/ssh/sshd_config` file:
+```
+ClientAliveInterval 10
+ClientAliveCountMax 3
+```
+
+Also you can run below command inorder to better using ssh direct app client:
+```
+ ufw allow 7300
+```
