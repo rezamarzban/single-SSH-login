@@ -20,6 +20,15 @@ ClientAliveInterval 10
 ClientAliveCountMax 3
 ```
 
+Or, Quick run:
+
+```
+echo "
+ClientAliveInterval 10
+ClientAliveCountMax 3
+" >> /etc/ssh/sshd_config
+```
+
 Also you can run below command inorder to better using ssh direct app client:
 ```
  ufw allow 7300
